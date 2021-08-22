@@ -1,0 +1,21 @@
+package com.dzyls.design.visitor.impl;
+
+import com.dzyls.design.visitor.Visitor;
+
+/**
+ * @Author <a href="stringnotnull@gmail.com">dzyls</a>
+ * @Date 2021/1/15 15:02
+ * @Version 1.0.0
+ * @Description:
+ */
+public class BVisitor implements Visitor {
+    @Override
+    public void visit(BTCoin coin) {
+        System.out.println("B -> Btc...");
+    }
+
+    @Override
+    public void visit(ETCoin coin) {
+        System.out.println("B -> Etc...");
+    }
+}
